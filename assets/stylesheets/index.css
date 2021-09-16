@@ -38,9 +38,12 @@ body {
     overflow-x: hidden;
     background-color: var(--White);
     transition: 0.3s linear;
+    --text-color: var(--Black);
+    --text-color2: var(--White);
 }
 
-body.dark-theme {
+
+/* body.dark-theme {
     --text-color: var(--Black);
     --text-color2: var(--White);
 }
@@ -50,10 +53,12 @@ body.dark-theme {
         --text-color: var(--White);
         --text-color2: var(--Black);
     }
-}
+} */
 
 body.dark {
     background: var(--Black);
+    --text-color: var(--White);
+    --text-color2: var(--Black);
 }
 
 
@@ -311,7 +316,7 @@ section .title::after {
     color: var(--DBlue);
     padding: 0 5px;
     background: var(--text-color2);
-    transition: ease-in 0.3s;
+    transition: 0.3s linear;
     transform: translateX(-50%);
 }
 
@@ -364,7 +369,7 @@ section .title::after {
 }
 
 .menu li a:hover {
-    color: var(--Dark);
+    color: grey;
 }
 
 .nav-bar.sticky .menu li a:hover {
